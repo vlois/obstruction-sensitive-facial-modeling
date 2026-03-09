@@ -20,7 +20,7 @@ def parse_annotation_line(line: str) -> Dict[str, Any]:
 			attributes (dict): Metadata labels.
 			image_relative_path (str): Relative path to the image file.
     """
-    parts = line.strip().split(",")
+    parts = line.strip().split()
     if len(parts) < 207:
         raise ValueError(f"Invalid annotation line: {line}")
     landmark_vals = np.array(list(map(float, parts[:196])), dtype=np.float32)
