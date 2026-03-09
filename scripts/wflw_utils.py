@@ -15,10 +15,10 @@ def parse_annotation_line(line: str) -> Dict[str, Any]:
         Dict[str, Any]: Dictionary containing:
             landmarks (np.ndarray): Array of shape (98, 2) containing
                     facial landmark coordinates.
-                bbox (list[float]): Bounding box coordinates
-                    [x_min, y_min, x_max, y_max].
-                attributes (dict): Metadata labels.
-                image_relative_path (str): Relative path to the image file.
+			bbox (list[float]): Bounding box coordinates
+				[x_min, y_min, x_max, y_max].
+			attributes (dict): Metadata labels.
+			image_relative_path (str): Relative path to the image file.
     """
     parts = line.strip().split(",")
     if len(parts) < 207:
