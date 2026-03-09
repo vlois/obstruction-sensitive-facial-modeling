@@ -1,4 +1,4 @@
-# Occlusion-Aware Facial Attention Modeling
+# Obstruction Sensitive Facial Attention
 
 ## Overview
 
@@ -18,3 +18,4 @@ The Wider Facial Landmarks in the Wild (WLFW) dataset captures facial variations
 
 - How can attention be represented via landmark-defined facial regions?
 - How does occlusion change visual salience?
+
